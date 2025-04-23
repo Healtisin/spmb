@@ -94,7 +94,7 @@
                 </div>
                 @endif
 
-                <form method="POST" action="{{ route('siswa.login') }}">
+                <form method="POST" action="{{ route('siswa.login.post') }}">
                     {{ csrf_field() }}
                     <div class="mb-3">
                         <label for="nik" class="form-label fw-bold">NIK</label>
