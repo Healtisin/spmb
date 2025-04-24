@@ -33,7 +33,7 @@
             <div class="col-md-8">
                 <div class="card shadow">
                     <div class="card-header bg-white">
-                        <h4 class="mb-0">Dashboard</h4>
+                        <h4 class="mb-0">Dashboard Siswa</h4>
                     </div>
                     <div class="card-body">
                         @if(session('success'))
@@ -41,9 +41,15 @@
                             {{ session('success') }}
                         </div>
                         @endif
+                        
+                        @if(session('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error') }}
+                        </div>
+                        @endif
 
                         <h5>Selamat datang, {{ Auth::user()->name }}!</h5>
-                        <p class="mb-0">Anda telah berhasil login ke sistem SPMB 2025.</p>
+                        <p class="mb-0">Anda telah berhasil login sebagai Siswa ke sistem SPMB 2025.</p>
                     </div>
                 </div>
             </div>
